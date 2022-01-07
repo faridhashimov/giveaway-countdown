@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-bg: #f1f5f8;
+  --main-color: #1a6aa2;
+  --secondary-secondary: #102a42;
+  --text-color: #829ab0;
+}
+
+body {
+  background: var(--body-bg);
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0 60px;
+}
+
+.left-side {
+  background: url('./img/gift.jpeg') no-repeat center center/cover;
+  width: 560px;
+  height: 350px;
+}
+
+.right-side {
+  width: 550px;
+}
+
+.right-side .main-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.right-side .giveaway {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  color: var(--secondary-secondary);
+}
+
+.right-side .dummy {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.timer {
+  display: flex;
+  color: white;
+}
+
+.timer div {
+  background: var(--secondary-secondary);
+  padding: 10px 16px 12px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.timer div h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.timer div h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .section-center {
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 90vw;
+    margin-bottom: 30px;
+  }
+
+  .right-side {
+    width: 90vw;
+  }
+
+  .right-side .main-title {
+    font-size: 20px;
+  }
+
+  .right-side .giveaway {
+    font-size: 14px;
+  }
+  
+  .right-side .dummy {
+    font-size: 14px;
+  }
+
+  body {
+    padding-bottom: 80px;
+  }
+}
